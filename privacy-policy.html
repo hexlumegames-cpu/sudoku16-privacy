@@ -13,7 +13,8 @@
             padding: 20px;
             background: #f5f5f5;
             color: #333;
-            padding-bottom: 120px;
+            /* Buton kalktığı için alt boşluğu azalttık */
+            padding-bottom: 40px;
         }
         h1 { color: #00d4ff; }
         h2 { color: #0a192f; margin-top: 30px; }
@@ -52,29 +53,6 @@
         }
         .content.active {
             display: block;
-        }
-
-        /* Geri Dön Butonu */
-        .back-to-game-btn {
-            position: fixed;
-            bottom: calc(20px + env(safe-area-inset-bottom, 10px));
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 15px 40px;
-            background: #000;
-            color: #00d4ff;
-            border: 2px solid #00d4ff;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
-            z-index: 1000;
-            white-space: nowrap;
-            text-transform: uppercase;
-        }
-        .back-to-game-btn:active {
-            transform: translateX(-50%) scale(0.95);
         }
 
         a { color: #00d4ff; text-decoration: none; }
@@ -167,10 +145,6 @@
         <p><strong>Developer:</strong> Hexlume Games</p>
     </div>
 
-    <button class="back-to-game-btn" id="back-btn" onclick="window.history.back()">
-        ◄ I READ AND UNDERSTOOD - BACK TO GAME
-    </button>
-
     <script>
         let currentLang = navigator.language.toLowerCase().startsWith('tr') ? 'tr' : 'en';
 
@@ -183,13 +157,6 @@
 
             document.getElementById('content-' + lang).classList.add('active');
             document.getElementById('btn-' + lang).classList.add('active');
-
-            const backBtn = document.getElementById('back-btn');
-            if (lang === 'tr') {
-                backBtn.innerText = '◄ OKUDUM VE ANLADIM - OYUNA DÖN';
-            } else {
-                backBtn.innerText = '◄ I READ AND UNDERSTOOD - BACK TO GAME';
-            }
 
             document.documentElement.lang = lang;
         }
