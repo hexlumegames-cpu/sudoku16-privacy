@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy / Gizlilik Politikası - Sudoku 16</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+            padding-bottom: 120px;
+        }
+        h1 { color: #00d4ff; }
+        h2 { color: #0a192f; margin-top: 30px; }
+        .last-updated { color: #666; font-style: italic; }
+
+        /* Dil Seçici Butonları */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1001;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            background: #fff;
+            border: 2px solid #00d4ff;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #0a192f;
+            transition: all 0.3s;
+        }
+        .lang-btn.active {
+            background: #00d4ff;
+            color: #fff;
+        }
+        .lang-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* İçerik Bölümleri */
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+
+        /* Geri Dön Butonu */
+        .back-to-game-btn {
+            position: fixed;
+            bottom: calc(20px + env(safe-area-inset-bottom, 10px));
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 40px;
+            background: #000;
+            color: #00d4ff;
+            border: 2px solid #00d4ff;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+            z-index: 1000;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+        .back-to-game-btn:active {
+            transform: translateX(-50%) scale(0.95);
+        }
+
+        a { color: #00d4ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher">
+        <button class="lang-btn" id="btn-tr" onclick="switchLang('tr')">🇹🇷 TR</button>
+        <button class="lang-btn" id="btn-en" onclick="switchLang('en')">🇬🇧 EN</button>
+    </div>
+
+    <div id="content-tr" class="content">
+        <h1>Gizlilik Politikası</h1>
+        <p class="last-updated">Son Güncelleme: 08 Şubat 2026</p>
+        
+        <h2>1. Genel Bilgiler</h2>
+        <p>Hexlume Games olarak, kullanıcılarımızın gizliliğine önem veriyoruz. Bu Gizlilik Politikası, Sudoku 16 uygulamasının kullanımı sırasında verilerin nasıl işlendiğini açıklar.</p>
+        
+        <h2>2. Toplanan Veriler ve Kullanımı</h2>
+        <p><strong>Doğrudan Veri Toplama:</strong> Biz geliştirici olarak sizin isminiz, e-posta adresiniz veya telefon numaranız gibi doğrudan kişisel kimlik bilgilerinizi toplamıyoruz.</p>
+        <p><strong>Otomatik Veri Toplama:</strong> Uygulama, reklam sunumu ve performans analizi için üçüncü taraf hizmet sağlayıcıları (Google AdMob) aracılığıyla teknik veriler toplayabilir. Bu veriler şunları içerebilir:</p>
+        <ul>
+            <li>Cihaz Reklam Kimliği (AAID)</li>
+            <li>IP Adresi ve yaklaşık konum verisi (ülke/şehir)</li>
+            <li>Cihaz modeli ve işletim sistemi sürümü</li>
+            <li>Uygulama içi hata raporları ve kullanım istatistikleri</li>
+        </ul>
+        
+        <h2>3. İnternet Bağlantısı ve Çevrimdışı Kullanım</h2>
+        <p>Sudoku 16 temel oyun mekanikleri açısından çevrimdışı çalışabilir. Ancak reklamların yüklenmesi ve analitik verilerin aktarımı için internet bağlantısı kullanılır. İnternet bağlantısı aktif olduğunda teknik veriler yukarıda belirtilen üçüncü taraflara aktarılır.</p>
+        
+        <h2>4. Üçüncü Taraf Hizmetleri (Reklamlar)</h2>
+        <p>Uygulamamızda Google AdMob reklam servisi kullanılmaktadır. Google, ilgi alanlarınıza göre reklam sunmak için verilerinizi işleyebilir.</p>
+        <p>Google'ın verileri nasıl kullandığını öğrenmek için: <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></p>
+
+        <h2>5. Veri Saklama ve Silme Talebi</h2>
+        <p>Oyun ilerlemeniz ve ayarlarınız cihazınızda yerel olarak saklanır. Uygulamayı silerek bu verileri kaldırabilirsiniz.</p>
+        <p>Google Play politikaları gereği, tarafımızda tutulan (varsa) verilerinizin silinmesini talep etme hakkınız vardır. Biz doğrudan kişisel veri saklamasak da, her türlü gizlilik talebiniz için <strong>hexlume.games@gmail.com</strong> adresine e-posta gönderebilirsiniz. Talebiniz 30 gün içinde yanıtlanacaktır.</p>
+        
+        <h2>6. Çocukların Gizliliği</h2>
+        <p>Uygulamamız 13 yaş ve üzeri kullanıcılar için tasarlanmıştır. 13 yaşından küçük çocuklardan bilerek kişisel veri toplamıyoruz.</p>
+        
+        <h2>7. Veri Güvenliği</h2>
+        <p>Toplanan teknik veriler, hizmet sağlayıcılarımızın (Google) güvenli sunucularında saklanır ve yetkisiz erişime karşı endüstri standartlarında korunur.</p>
+
+        <h2>8. İletişim</h2>
+        <p>Sorularınız için bizimle iletişime geçin:</p>
+        <p><strong>E-posta:</strong> hexlume.games@gmail.com</p>
+        <p><strong>Geliştirici:</strong> Hexlume Games</p>
+    </div>
+
+    <div id="content-en" class="content">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: February 08, 2026</p>
+        
+        <h2>1. Introduction</h2>
+        <p>At Hexlume Games, we value your privacy. This Privacy Policy explains how data is processed when you use the Sudoku 16 application.</p>
+        
+        <h2>2. Data Collection and Usage</h2>
+        <p><strong>Direct Collection:</strong> We, as the developer, do not directly collect personal identification information such as your name, email address, or phone number.</p>
+        <p><strong>Automated Collection:</strong> The app may collect technical data through third-party service providers (Google AdMob) for advertising and performance analysis. This data may include:</p>
+        <ul>
+            <li>Advertising ID (AAID)</li>
+            <li>IP Address and approximate location (country/city)</li>
+            <li>Device model and operating system version</li>
+            <li>In-app crash reports and usage statistics</li>
+        </ul>
+        
+        <h2>3. Internet Connection and Offline Use</h2>
+        <p>Sudoku 16 can work offline for core gameplay. However, an internet connection is used for loading advertisements and transmitting analytical data. When the connection is active, technical data is transferred to the third parties mentioned above.</p>
+        
+        <h2>4. Third-Party Services (Ads)</h2>
+        <p>Our app uses the Google AdMob advertising service. Google may process your data to serve ads based on your interests.</p>
+        <p>To learn how Google uses data: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+
+        <h2>5. Data Retention and Deletion Request</h2>
+        <p>Your game progress and settings are stored locally on your device. You can remove this data by deleting the application.</p>
+        <p>In accordance with Google Play policies, you have the right to request the deletion of your data (if any) held by us. Although we do not store personal data directly, you can send an email to <strong>hexlume.games@gmail.com</strong> for any privacy requests. Your request will be answered within 30 days.</p>
+        
+        <h2>6. Children's Privacy</h2>
+        <p>Our app is designed for users aged 13 and above. We do not knowingly collect personal data from children under 13.</p>
+        
+        <h2>7. Data Security</h2>
+        <p>Collected technical data is stored on our service providers' (Google) secure servers and protected against unauthorized access with industry standards.</p>
+
+        <h2>8. Contact</h2>
+        <p>If you have questions, please contact us:</p>
+        <p><strong>Email:</strong> hexlume.games@gmail.com</p>
+        <p><strong>Developer:</strong> Hexlume Games</p>
+    </div>
+
+    <button class="back-to-game-btn" id="back-btn" onclick="window.history.back()">
+        ◄ I READ AND UNDERSTOOD - BACK TO GAME
+    </button>
+
+    <script>
+        let currentLang = navigator.language.toLowerCase().startsWith('tr') ? 'tr' : 'en';
+
+        function switchLang(lang) {
+            currentLang = lang;
+            document.getElementById('content-tr').classList.remove('active');
+            document.getElementById('content-en').classList.remove('active');
+            document.getElementById('btn-tr').classList.remove('active');
+            document.getElementById('btn-en').classList.remove('active');
+
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+
+            const backBtn = document.getElementById('back-btn');
+            if (lang === 'tr') {
+                backBtn.innerText = '◄ OKUDUM VE ANLADIM - OYUNA DÖN';
+            } else {
+                backBtn.innerText = '◄ I READ AND UNDERSTOOD - BACK TO GAME';
+            }
+
+            document.documentElement.lang = lang;
+        }
+
+        window.addEventListener('load', () => {
+            switchLang(currentLang);
+        });
+    </script>
+</body>
+</html>
